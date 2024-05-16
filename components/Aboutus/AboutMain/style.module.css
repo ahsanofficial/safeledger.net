@@ -1,0 +1,33 @@
+.vector {
+  width: 159px;
+  height: 159px;
+  top: 957px;
+  left: 1306px;
+  gap: 0px;
+  z-index: 2;
+  position: relative;
+}
+.bg{
+  width: 80%;
+  margin: auto;
+}
+.btn {
+  width: 225px;
+  height: 58px;
+  text-align: center;
+  padding: 4px 13px 4px 13px;
+  gap: 10px;
+  border-radius: 20px;
+  margin-top: 90px;
+}
+.flex{
+  /* display: flex; */
+}
+@media (min-width: 300px) and (max-width: 450px) {
+  .flex {
+    display: block;
+  }
+  .bg{
+    display: block !important;
+  }
+}

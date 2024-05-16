@@ -1,0 +1,34 @@
+.back {
+    background-image: url("../../../public/home/blog/image2.jpeg");
+    object-fit: cover !important;
+    position: relative;
+    height: 660px;
+    width: auto;
+}
+
+.back::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.width {
+    width: 65%;
+    margin: auto;
+}
+
+.background {
+    background-color: #EFF4FF;
+}
+
+@media (min-width: 300px) and (max-width: 450px) {
+    .width {
+        width: 80%;
+    }
+    .back{
+        height: auto;
+    }
+}

@@ -1,0 +1,39 @@
+/* .bg {
+    width: 80%;
+    margin: auto;
+  } */
+
+.bg {
+  /* opacity: 30%; */
+  background-image: url("../../../public/home/numberspeaks/numberspeak-bg.jpeg");
+  height: 476px !important;
+  object-fit: cover !important;
+}
+
+.width {
+  width: 80%;
+  margin: auto;
+}
+
+.paragraph {
+  width: 60%;
+  margin: auto;
+}
+
+.show {
+  display: none;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .paragraph {
+    width: 100%;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+}

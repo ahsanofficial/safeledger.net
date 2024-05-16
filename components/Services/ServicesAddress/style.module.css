@@ -1,0 +1,94 @@
+.font-brfirma {
+  font-family: "BR Firma", sans-serif; /* Specify a fallback font */
+}
+
+.container {
+  @media (max-width: 425px) {
+    padding: 4rem 3rem 1rem 1rem;
+  }
+}
+.text {
+  @media (max-width: 425px) {
+    width: 100%;
+  }
+}
+.image {
+  @media (max-width: 425px) {
+    width: 100%;
+    margin-top: 10px;
+    /* width: 393px; */
+    height: inherit;
+  }
+}
+
+.col {
+  @media (max-width: 425px) {
+    flex-direction: column;
+    gap: 0rem;
+  }
+}
+/* sm:pt-16 sm:pb-12 sm:ps-2 sm:pe-2 */
+.heading {
+  /* width: 546px; */
+  height: 38px;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 37.71px;
+  text-align: left;
+  margin-bottom: 20px;
+
+  @media (max-width: 1024px) {
+    height: 38px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 31.71px;
+    text-align: right;
+    margin-bottom: 41px;
+  }
+  @media (max-width: 425px) {
+    
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 31.71px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+}
+
+.para {
+  font-size: 14.5px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  padding-bottom: 11px;
+}
+
+.heading_2 {
+  /* width: 667px; */
+  height: 38px;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 37.71px;
+  text-align: right;
+  margin-bottom: 30px;
+  @media (max-width: 425px) {
+    
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 31.71px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+}
+
+.para_2 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: right;
+  padding-bottom: 11px;
+}
+
+.img {
+  border-radius: 20px;
+}

@@ -1,0 +1,19 @@
+.bg {
+  width: 80%;
+  margin: auto;
+
+  @media (max-width : 425px) {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 450px) {
+  .center {
+    margin-top: 10px;
+    /* text-align: center; */
+  }
+
+  .bg {
+    margin-top: 220px !important;
+  }
+}

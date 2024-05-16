@@ -1,0 +1,15 @@
+.logo{
+    width: 128px !important;
+    height: auto !important;
+}
+.fz35{
+    font-size: 35px;
+}
+
+.bgColor{
+    background-color: #dfe9ff !important;
+}
+
+.activeMenuItem {
+    border-bottom: 2px solid blue;
+  }

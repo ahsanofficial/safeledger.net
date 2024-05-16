@@ -1,0 +1,155 @@
+{
+  "London_Registered_Office": {
+    "Title": "Transfer of Shares",
+    "Author": "Sobiya Ameen",
+    "Keywords": [
+      "Transfer of Shares"
+    ],
+    "Banner_Content": "You can raise the profile of your company by using our esteemed London location. Our team of professionals turns your ideal process into a smooth and simple process.",
+    "Package_Inclusion": {
+      "Mail Handling & Management": true,
+      "Premium Central Location": true,
+      "Meeting Room Access": true,
+      "Address Registration": true,
+      "Documentation": true,
+      "Process Consultation": true,
+      "Expert Advisory": true
+    },
+    "What_is_a_Registered_Office_Address": {
+      "Title": "What is a Business Address?",
+      "Description": "This kind of address is optional and has various advantages such as general business mail is received and sent to a business address. However, it is not legally required for company creation or recorded in the public domain. Additionally, it is important to note that the business address cannot be used in place of the registered office address."
+    },
+    "Why_do_you_need_a_London_registered_office": {
+      "Title": "Why do you need a business address?",
+      "enhancing your company's reputation overall ": true,
+      "establishing a company presence in a well-known or different location": true,
+      "focusing on or examining a new market": true,
+      "supplying a formal, non-residential correspondence address to business associates and other parties": true,
+      "enabling you to keep your privacy": true
+    },
+    "What_do_we_Offer": {
+      "MainTitle": "Process of Transfer of shares: step-by-step instructions ",
+      "Services": [
+        {
+          "Title": "Select the reason for transfer of shares",
+          "Description": "Shares of a limited corporation may be exchanged between parties in return for a payment in cash, a non-cash benefit such products, services, information, or debt forgiveness, through an employee benefitting scheme, or a gift to a spouse or family member",
+          "ReadMore": "Read More",
+          "Link": "dfdf"
+        },
+        {
+          "Title": "Fill the form",
+          "Description": "Filling out a Stock Transfer Form is the first step to take if you want to sell or transfer shares once the company is formed. This form requires the following information to be filled out: business name, company number, amount and class of shares being transferred, name and address of the new shareholder (transferee), name and address of the existing shareholder (transferor), details of non-cash payments made for the shares, amount paid for the shares, and, if applicable, the transferor's signature.",
+          "ReadMore": "Read More",
+          "Link": "dfdf"
+        },
+        {
+          "Title": "Share Value & Stamp duty",
+          "Description": "If the sale value of the transfer is more than £1000, a copy of the stock transfer form needs to be sent to HMRC. A 0.5% stamp duty tax on the entire sale price will be due by the transferee.",
+          "ReadMore": "Read More",
+          "Link": "dfdf"
+        },
+        {
+          "Title": "Board Resolution",
+          "Description": "The board of directors must then authorise the transfer at a meeting or by a board resolution. In certain cases, the current shareholders may additionally need to approve a specific resolution in order to give up their preemption rights when shares are transferred",
+          "ReadMore": "Read More",
+          "Link": "dfdf"
+        },
+        {
+          "Title": "Documentation for Record",
+          "Description": "A copy of the stock transfer form must be given by the director(s) to the transferor and transferee upon completion of the transfer. A copy of the statutory records, which must be kept at the registered office or SAIL address, shall be kept by the firm.",
+          "ReadMore": "Read More",
+          "Link": "dfdf"
+        },
+        {
+          "Title": "Certificate Issuance & Updating Registers",
+          "Description": "Share certificates must be given to the new shareholder as identification of ownership. As quickly as practicable, the statutory register of members should be amended to reflect the share transfer and include information about both new and existing shareholders. The People with Significant Control (PSC) register may also need to be updated, if needed.",
+          "ReadMore": "Read More",
+          "Link": "dfdf"
+        }
+      ]
+    },
+    "How_to_get_your_London_registered_Office_Address": {
+      "Title": "Stamp Duty & Transfer of Shares",
+      "Steps": [
+        "The shares are currently held by a UK business (or a foreign company that maintains a UK share registry)",
+        "If the recipient had a purchase option on shares",
+        "Should the recipient own a stake in the shares (for example, a right to a portion of the money paid to transfer the shares or other entitlements linked to the shares)",
+        "In the event where shares having a zero value are transferred without any consideration",
+        "If the shares are being issued by the corporation and do not currently exist,",
+        "If the fund management purchases shares in a 'open ended investment company,'",
+        "Comprise units within a unit trust that are purchased from the fund manager"
+      ]
+    },
+    "How_does_SafeLedger_make_your_process_easier": {
+      "Title": "SafeLedger has been a prominent choice for the businesses in UK for various benefits:",
+      "Services": [
+        {
+          "Title1": "Expert Pool",
+          "Title2": "SafeLedger has access to a sizable global expert pool. Our team of professionals ensures that your job is handled as efficiently as possible."
+        },
+        {
+          "Title1": "Cost-effective",
+          "Title2": "SafeLedger services are of the highest calibre at the most economical price that fits the client's budget, ensuring that the client benefits from more than just excellent service on our platform."
+        },
+        {
+          "Title1": "Client-oriented strategy ",
+          "Title2": "Our team of professionals is well-versed in and prepared to handle client-oriented strategies. They understand that the process must be client-centric and concentrate on fulfilling the demands of the client by fulfilling all of their business's requirements "
+        },
+        {
+          "Title1": "Process Alteration ",
+          "Title2": "Because our approach is client-centric, we allow the client to make changes to our process structuring to better meet their needs, goals, and vision. For us, client pleasure and getting the finest results are the main priorities "
+        },
+        {
+          "Title1": "Partner of choice for over 10,000 clients ",
+          "Title2": "Over 10,000 customers have trusted SafeLedger after using our services. Their continued faith in us over a period of time is evidence of the quality and assurance of our services. "
+        }
+      ]
+    },
+    "Believe_in_Numbers": {
+      "Title": "Believe In Numbers",
+      "Services": [
+        {
+          "number": "9000+",
+          "description": "Clients served in the United Kingdom"
+        },
+        {
+          "number": "11+ Years",
+          "description": "of industry serving experience inclusive of multi-disciplinary domains"
+        },
+        {
+          "number": "500+",
+          "description": "professionals’ network of lawyers, Accountants, and Financial Officers, from all over the world."
+        },
+        {
+          "number": "45000+",
+          "description": "Consultations are offered to clients from the corners of the globe."
+        }
+      ]
+    },
+    "FAQs": {
+      "Title": "Frequently asked questions (FAQ’s)",
+      "Services": [
+        {
+          "question": "What is the share transfer fee in the UK? ",
+          "answer": "Typically, there is a 0.5% transactional tax or charge associated with purchasing shares. If you use a stock transfer form to purchase shares, you will be required to pay Stamp Duty Reserve Tax (SDRT) if the transaction exceeds £1,000."
+        },
+        {
+          "question": "What is a stock transfer form UK?",
+          "answer": "Shares can be transferred between parties using a stock transfer form. The aforementioned form, also referred to as a Share Transfer Form, must be completed if you are transferring shares inside your organization. We have put up a quick guide explaining how to complete a stock transfer form to make the process easier for you."
+        },
+        {
+          "question": "What is the stamp duty on shares transfer in the UK?",
+          "answer": "Stamp duty on electronic share purchases is set at 0.5% and is usually deducted automatically from the transaction charge. When it comes to traditional paper share certificates, transactions that total more than £1,000 are subject to a stamp duty of 0.5%, which is rounded to the nearest £5."
+        },
+        {
+          "question": "Where do I send my stock transfer form UK?",
+          "answer": "On transactions involving shares that are traded on a recognized growth market, like AIM, and are not also listed on another recognized stock exchange, Stamp Duty and SDRT are no longer applicable. Private investors can also get further information by getting in touch with their brokers."
+        },
+        {
+          "question": "Do you pay tax on shares in the UK?",
+          "answer": "If you sell shares or other investments and make a profit, you may be required to pay Capital Gains Tax. Investments and shares that you could have to pay taxes on include units in unit trusts and shares that aren't part of an ISA or PEP."
+        }
+      ]
+    }
+  }
+}

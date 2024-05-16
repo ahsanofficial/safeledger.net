@@ -1,0 +1,102 @@
+/* style.module.css */
+.Backgound {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 425px) {
+    padding: 26rem 4rem 1rem 0rem;
+  }
+}
+
+.Backgound::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("../../../public/contactus/bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  width: auto;
+}
+
+.textContainer {
+  padding: 20px;
+  border-radius: 10px;
+  opacity: 0.9;
+  color: #244ba8;
+  position: relative;
+  bottom: 60px;
+}
+
+.formContainer {
+  padding: 20px 5px;
+  margin-right: 20px;
+  opacity: 0.9;
+}
+
+.image {
+  width: auto;
+  height: 30px;
+}
+
+.cbtn {
+  width: 330px;
+  /* Limit width for larger screens */
+  height: 56px;
+  letter-spacing: 6px;
+  background-color: white;
+  color: #244ba8;
+  font-weight: 500;
+  font-size: 20px;
+  margin: auto;
+  margin-top: 24px;
+}
+
+.margin {
+  margin-top: 20px;
+  /* Add margin for better spacing */
+  opacity: 0.9;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .textContainer {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 0px !important;
+    position: absolute;
+    top: 10%;
+    right: -2%;
+  }
+
+  .ctext {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .cbtn {
+    /* margin: 20px auto; */
+    margin-bottom: 90px;
+    /* Center button on smaller screens */
+    margin-top: 20px !important;
+  }
+
+  .Backgound {
+    height: 50vh;
+  }
+
+  .margin {
+    margin: 20px -34px 0px 13px !important;
+    position: absolute;
+    top: 50%;
+  }
+
+  .formContainer {
+    padding: 0px !important;
+  }
+}

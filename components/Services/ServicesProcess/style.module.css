@@ -1,0 +1,13 @@
+.blue_heading {
+    width: 30%;
+}
+.container {
+    @media (max-width: 425px) {
+      padding: 4rem 1rem 1rem 1rem;
+    }
+  }
+
+.arrow {
+    height: min-content;
+    padding-top: 3px;
+}

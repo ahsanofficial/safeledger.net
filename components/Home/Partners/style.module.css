@@ -1,0 +1,24 @@
+.cardContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  min-width: 200px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.cardContent {
+  padding: 1rem;
+}
+
+.bg {
+  width: 80%;
+  margin: auto;
+}
+
+.background {
+  background-color: #0855C1;
+}

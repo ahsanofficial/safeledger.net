@@ -1,0 +1,26 @@
+.Backgound {
+    background-image: url('../../../public/landing//landingbanner/image2.png');
+    background-size: cover;
+    background-position: center;
+    height: 762px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 100px blue;
+    /* padding: 20px; */
+  }
+  
+  .textContainer {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .formContainer {
+    padding: 20px;
+    /* margin-top: 20px; */
+    margin-right: 20px;
+  }
+  .image{
+    width: auto;
+    height: 30px;
+  }

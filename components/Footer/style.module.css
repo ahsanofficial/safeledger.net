@@ -1,0 +1,94 @@
+/* style.module.css */
+.bg {
+  background-color: #03111c;
+}
+
+.info {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: end;
+  width: min-content;
+}
+
+.logo {
+  place-items: inherit;
+  text-align: end;
+}
+
+.address {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.2px;
+  text-align: end;
+  color: #c5c5c5;
+}
+
+.store {
+  width: 139.23px;
+  height: 30px;
+  padding: 21px 10px 21px 10px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.country {
+  width: 264px;
+  height: 38px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 15px 7px 15px;
+  background: transparent;
+  border: 1px solid #244ba8;
+  margin-top: 20px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Terms {
+  width: 40%;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 640px) {
+  .bg{
+    padding: 10px;
+  }
+  .flex {
+    flex-direction: column; /* Change flex direction to stack vertically */
+  }
+
+  .info {
+    width: auto;
+    justify-content: center; /* Center align the info section */
+  }
+
+  .store,
+  .country {
+    width: 100%; /* Set width to 100% for full width on mobile */
+    margin-top: 10px; /* Adjust margin for better spacing */
+  }
+
+  .Terms {
+    width: 80%; /* Adjust width for better mobile view */
+    margin: 20px auto; /* Center and add margin for better spacing */
+  }
+
+  .logo {
+    text-align: center; /* Center align logo */
+  }
+
+  .address {
+    text-align: center; /* Center align address */
+  }
+}

@@ -1,0 +1,33 @@
+.center {
+    align-items: normal;
+    height: 620px;
+}
+
+.bg {
+    background-color: #DFE9FF;
+}
+
+.imageShadow{
+    box-shadow: -3px 3px 10px 0px #00000040 !important;
+    box-shadow: -18px 13px 18px 0px #00000036 !important;
+}
+
+.btnWidth{
+    width: 40%;
+    height: 50px;
+    border-radius: 20px;
+}
+.flex{
+    display: block !important;
+}
+@media (min-width: 350px) and (max-width: 500px) {
+    .center {
+        height: auto;
+    }
+    .btnWidth{
+        display: block;
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+}

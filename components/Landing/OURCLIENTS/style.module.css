@@ -1,0 +1,14 @@
+.image{
+    width: 200px;
+    height: auto;
+    align-items: center;
+}
+.prime{
+    width: auto;
+    height: 80px;
+    align-items: center;
+}
+.bg{
+    width: 80%;
+    margin: auto;
+}

@@ -1,0 +1,14 @@
+.image{
+    width: auto;
+    height: 30px;
+    align-items: center;
+}
+.bg{
+    width: 80%;
+    margin: auto;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+    .bg {
+       margin-top: 420px;
+    }
+}

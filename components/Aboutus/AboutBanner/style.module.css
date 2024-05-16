@@ -1,0 +1,49 @@
+.bg {
+  background-image: url("../../../public/about/aboutbanner/Rectangle\ 130.jpg");
+  padding-right: 100px;
+  padding-left: 200px;
+  align-items: center;
+  gap: 60px;
+}
+.quickly{
+  width: 40% !important;
+  margin: auto;
+}
+
+.banner_text {
+  width: 800px;
+  height: 177px;
+  color: #244BA8;
+  margin-top: 30px;
+ 
+
+
+}
+
+.image {
+  width: 612px;
+  height: auto;
+  margin: 30px 0 30px 10px;
+  left: 45px;
+  position: relative;
+ 
+ 
+
+}
+.center{
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 300px) and (max-width: 450px) {
+  .center {
+    display: block;
+  }
+  .img{
+    margin-top: 20px;
+    width: 283px;
+    height: 251px;
+  }
+  .quickly{
+    width: 100% !important;
+  }
+}

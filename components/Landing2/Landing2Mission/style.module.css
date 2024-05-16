@@ -1,0 +1,36 @@
+.cardContainer {
+  display: flex;
+  /* justify-content: space-between; */
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  min-width: 200px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.cardContent {
+  padding: 1rem;
+}
+.redius{
+  border-radius: 30px !important;
+}
+.bg {
+  width: 80%;
+  /* margin: auto; */
+}
+
+.background {
+  background-color: #0855C1;
+  border-radius: 0px 0px 12px 12px;
+}
+.border{
+  border-radius: 12px 12px 0px 0px;
+}
+@media (min-width: 300px) and (max-width: 450px) {
+  .bg {
+    width: 100% !important;
+    margin: auto;
+  }
+}

@@ -1,0 +1,12 @@
+.bg {
+    width: 80%;
+  }
+  .size{
+    height: 180px; 
+    width: auto;
+  }
+  @media (min-width: 300px) and (max-width: 450px) {
+    .bg{
+     margin: auto;
+    }
+  }

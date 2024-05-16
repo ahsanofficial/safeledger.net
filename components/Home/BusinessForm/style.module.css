@@ -1,0 +1,10 @@
+.bg {
+    width: 80%;
+    margin: auto;
+}
+.flex{
+    display: flex;
+}
+.full{
+    width: 100% !important;
+}
