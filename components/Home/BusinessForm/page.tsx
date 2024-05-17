@@ -10,7 +10,7 @@ const BusinessForm = () => {
         <div className={`flex pt-6 ${styles.bg} grid sm:grid-cols-2 lg:grid-cols-2`}>
             <div className={`${styles.top} `}>
                 <h2 className="sm:text-4xl text-blue-600 font-extrabold text-3xl w-3/5">Start your Business Today</h2>
-                <p className='sm:pr-6 mg:pr-6 mt-10'>Speak with a SafeLedger specialist today to ensure compliance, efficiency, and growth as you navigate every stage of your company's journey. Together, let's turn your business goals into reality. </p>
+                <p className='sm:pr-6 mg:pr-6 mt-10'>Speak with a SafeLedger specialist today to ensure compliance, efficiency, and growth as you navigate every stage of your company&apos;s journey. Together, let&apos;s turn your business goals into reality. </p>
             </div>
             <div>
                 <form noValidate autoComplete="off">

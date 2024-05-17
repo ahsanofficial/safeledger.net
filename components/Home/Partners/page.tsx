@@ -49,7 +49,7 @@ export const Patners = () => {
                                     Customized Support
                                 </Typography>
                                 <Typography variant="body2" className='text-white'>
-                                    Each business is unique, and SafeLedger recognizes this by offering tailored services that fit your specific needs and goals. Whether you're a startup or an established enterprise, our personalized support is designed to elevate your business to the next level                                </Typography>
+                                    Each business is unique, and SafeLedger recognizes this by offering tailored services that fit your specific needs and goals. Whether you are a startup or an established enterprise, our personalized support is designed to elevate your business to the next level                                </Typography>
                                 <div className='text-right'>
                                     <Button variant="outlined" className='mt-5 rounded-full	border-slate-50	text-white '>Learn more</Button>
                                 </div>

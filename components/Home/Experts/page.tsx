@@ -13,7 +13,7 @@ const Experts = () => {
                     <div className='mt-10 lg:mt-16 sm:mt-16 lg:mr-16'>
                         <h2 className="sm:text-4xl text-blue-600 font-extrabold sm:text-3xl lg:text-3xl text-2xl sm:pr-10 lg:pr-10">Connect with our Experts</h2>
                         <p className="mt-5 text-blue-600 sm:pr-10 lg:pr-10">
-                            Connect with our SafeLedger experts today to guide you through each phase of your business journey, ensuring compliance, efficiency, and growth. Let's make your business ambitions a reality.
+                            Connect with our SafeLedger experts today to guide you through each phase of your business journey, ensuring compliance, efficiency, and growth. Let&apos;s make your business ambitions a reality.
                         </p>
 
                         <Button variant="outlined" className="font-medium px-5 rounded-full lg:mt-10 sm:mt-10 ">Book Consultation</Button>

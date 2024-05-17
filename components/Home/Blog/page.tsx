@@ -62,10 +62,9 @@ export const Blog = () => {
             <Grid item xs={12} sm={6} md={4}>
               <Card className="bg-slate-600 shadow-md rounded-xl">
                 <Image
-                  src={image1.src} width={500}
+                  src={image1.src}
                   height={300}
                   width={500}
-                  height={300}
                   alt="Card 2"
                   className=" h-48 object-cover rounded-t-lg"
                 />
