@@ -5,7 +5,7 @@
 
 .bg {
   /* opacity: 30%; */
-  background-image: url("../../../public/home/numberspeaks/numberspeak-bg.jpeg");
+  /* background-image: url("../../../public/home/numberspeaks/number.png"); */
   height: 476px !important;
   object-fit: cover !important;
 }
