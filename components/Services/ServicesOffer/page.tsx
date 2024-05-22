@@ -9,10 +9,13 @@ export const ServicesOffer = () => {
   return (
     <div className={`${styles.container} pt-10 pb-20 ps-32 pe-56`}>
       <div className={`${styles.space} lg:gap-20   mb-10`}>
-        <span className={`${styles.left_border}`}></span>
         <div>
           <div>
-            <h2 className={`sm:text-xl lg:text-2xl font-bold`}>{json.London_Registered_Office.What_do_we_Offer.MainTitle}</h2>
+            <div className="flex items-center">
+              <span className={`${styles.left_border}`}></span>
+              <h2 className={`sm:text-xl lg:text-2xl font-bold`}>{json.London_Registered_Office.What_do_we_Offer.MainTitle}</h2>
+            </div>
+
           </div>
           <div className={`${styles.space} ms-6 gap-10 mt-10 mb-16`}>
             {servicesData.slice(0, 3).map((service, index) => (
