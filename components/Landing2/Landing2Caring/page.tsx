@@ -12,7 +12,7 @@ import {
   Typography,
 } from "@mui/material";
 import styles from "./style.module.css";
-import bg from "../../../public/home/numberspeaks/numberspeak-bg.jpeg";
+import bg from "../../../public/landing2/landingbanner2/number.png";
 import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import Image from "next/image";
@@ -81,7 +81,7 @@ export const Landing2Caring = () => {
           <strong className="text-blue-600 font-normal">&nbsp;customers</strong>
         </h1>
       </div>
-      <div className="relative isolate overflow-hidden bg-gray-900 py-10 sm:py-10">
+      <div className="relative isolate overflow-hidden 0 py-10 sm:py-10">
         <img
           src={bg.src}
           alt=""
