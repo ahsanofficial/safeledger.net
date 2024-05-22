@@ -5,6 +5,9 @@
   align-items: center;
   gap: 60px;
 }
+.center{
+  background-image: url(../../../public/about/aboutbanner/Rectangle\ 130.jpg);
+}
 .quickly{
   width: 40% !important;
   margin: auto;

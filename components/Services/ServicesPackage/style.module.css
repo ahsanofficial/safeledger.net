@@ -2,24 +2,16 @@
     font-family: 'BR Firma', sans-serif;
 } */
 .left_border {
-    width: 14px;
-    height: 91px;
-    border-left: 10px solid #244ba8;
-    display: flex;
+  width: 14px;
+  height: 91px;
+  border-left: 10px solid #244ba8;
+  display: flex;
 }
+
 .container {
-    @media (max-width: 425px) {
-      padding: 4rem 1rem 1rem 1rem;
-      margin-top: 500px;
-    }
-  }
-  .col {
-    @media (max-width: 425px) {
-      flex-direction: column;
-      gap: 0rem;
-      margin-top: 20px;
-    }
-  }
+  width: 80%;
+  margin: auto;
+}
 
 .bg_arrow {
   background-image: url("../../../public//services/servicespackage/Union.png");
@@ -29,18 +21,23 @@
 }
 
 .package_points {
-    width: 294px;
-    height: 268px;
-    
+  width: 294px;
+  height: 268px;
+
 }
 
 .font-brfirma {
-    font-family: 'BR Firma', sans-serif; /* Specify a fallback font */
-  }
+  font-family: 'BR Firma', sans-serif;
+  /* Specify a fallback font */
+}
 
 @media (min-width: 300px) and (max-width: 450px) {
   .bg_arrow {
-   width: 300px;
-   padding-right: 0px;
+    width: 300px;
+    padding-right: 0px;
+  }
+
+  .container {
+    width: 100% !important;
   }
 }
