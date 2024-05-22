@@ -80,7 +80,12 @@
   .Backgound {
     height: 380px;
   }
-
+  .banner {
+    margin-top: 0px;
+  }
+  .formContainer{
+    padding: 5px;
+  }
   .margin {
     margin: 0px 20px 20px 43px !important;
     position: absolute;
@@ -114,7 +119,7 @@
   }
 
   .review {
-    font-size: 8px !important;
+    font-size: 6px !important;
   }
 
   .img {

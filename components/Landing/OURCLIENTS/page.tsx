@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import styles from './style.module.css';
-import { Grid, IconButton, Hidden } from '@mui/material';
+import { Grid, IconButton, Hidden, Typography } from '@mui/material';
 import disney from '../../../public/landing/client/disney.png';
 import mac from '../../../public/landing/client/mac.png';
 import netflix from '../../../public/landing/client/netflex.png';
@@ -66,10 +66,11 @@ const Client: React.FC = () => {
 
     return (
         <div className={`pt-16 ${styles.bg}`}>
-            <Grid container spacing={3} className='items-center justify-center'>
+            <Typography className='text-3xl	text-center mb-6'>OUR CLIENTS</Typography>
+            <Grid container spacing={3} className='items-center justify-center '>
                 {visibleSlides.map(slide => (
                     <Grid key={slide.id} item xs={isMobileView ? 4 : 3}>
-                        <div className='flex justify-center'>
+                        <div className='flex justify-center content-normal'>
                             <img src={slide.src} className={`${styles.image}`} alt="slide" />
                         </div>
                     </Grid>
