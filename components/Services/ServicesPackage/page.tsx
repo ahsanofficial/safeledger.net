@@ -8,7 +8,7 @@ export const ServicesPackage = () => {
   const Package = Data.Package_Inclusion
 
   return (
-    <div className={`${styles.container} lg:mt-30 sm:mt-30 mt-6 sm:px-4 lg: pt-10 lg: pb-20 lg: ps-32 lg: pe-56 `}>
+    <div className={`${styles.container} lg:mt-30 sm:mt-30 mt-6 sm:px-4 lg:pt-10 lg:pb-20 lg:ps-32 lg:pe-56 `}>
       <div className="flex gap-4 lg:mb-10 sm:gap-1 ">
         <div>
           <span className={`${styles.left_border}`}></span>
@@ -17,7 +17,7 @@ export const ServicesPackage = () => {
           {Data.Banner_Content}
         </div>
       </div>
-      <div className={`${styles.col} flex lg: flex-col justify-center sm: gap-2 lg: gap-16`}>
+      <div className={`${styles.col} lg:flex justify-center sm:gap-2 lg:gap-16`}>
         <div className={`${styles.bg_arrow} flex items-center justify-center`}>
           <p className="text-3xl font-normal font-brfirma text-left text-white leading-tight">
             Package inclusion

@@ -13,7 +13,7 @@ export const Landing2Taking = () => {
       <div
         className={`mx-auto sm:max-w-4xl lg:max-w-4xl gap-x-8 gap-y-16 sm:py-24 lg:py-24 ${styles.center}`}
       >
-        <div className=" sm:flex lg:flex block">
+        <div className=" sm:flex lg:flex items-center block">
           <div>
             <h2 className="sm:text-5xl text-blue-600 font-bold sm:text-3xl lg:text-3xl text-2xl sm:pr-10 lg:pr-10">
               Taking Details into account
@@ -26,7 +26,7 @@ export const Landing2Taking = () => {
 
             <Button
               variant="outlined"
-              className="font-medium px-5 rounded-full lg:mt-10 sm:mt-10 "
+              className="font-medium px-5 rounded-full lg:mt-10 sm:mt-10 sm:mb-0 lg:mb-0 mb-8 sm:mt-0 lg:mt-0 mt-8"
             >
               Know More
             </Button>
