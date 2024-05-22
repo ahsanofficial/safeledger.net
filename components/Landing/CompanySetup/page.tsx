@@ -20,7 +20,7 @@ const CompanySetup = () => {
                     <h2 className="sm:text-3xl text-blue-600 font-extrabold text-3xl">UK Company Setup Guide 2024</h2>
                     <p className="mt-5 text-blue-600">Click on the button below to know the basics you must know as an entrepreneur before incorporating your company in the United Kingdom</p>
                     <div className='mt-10'>
-                        <Button variant="outlined" className="font-medium px-5 rounded-full pt-16 ">DOWNLOAD NOW</Button>
+                        <Button variant="outlined" className="font-medium px-5 rounded-full ">DOWNLOAD NOW</Button>
 
                     </div>
                 </div>

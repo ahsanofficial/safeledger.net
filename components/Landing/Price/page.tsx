@@ -92,27 +92,27 @@ const Price: React.FC = () => {
                                 <div
                                     className={`rounded-2xl ${testimonial.bgColor} py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16`}
                                 >
-                                    <div className="mx-auto max-w-xs px-8">
-                                        <p className={`text-base font-semibold ${testimonial.textColor}`}>
+                                    <div className={` mx-auto max-w-xs px-8 ${styles.price}`}>
+                                        <Typography variant="body1" className={`text-base font-semibold ${testimonial.textColor}`}>
                                             {testimonial.title}
-                                        </p>
-                                        <p className="mt-6 items-baseline justify-center gap-x-2 text-left">
-                                            <p className="text-slate-400 text-sm">
+                                        </Typography>
+                                        <div className="mt-6 items-baseline justify-center gap-x-2 text-left">
+                                            <Typography variant="body2" className="text-slate-400 text-sm">
                                                 Starting From
-                                            </p>
+                                            </Typography>
                                             <span className="text-3xl font-bold tracking-tight text-rose-700">
                                                 {testimonial.startingFrom}
                                             </span>
-                                        </p>
-                                        <button
-                                            // variant="outlined"
+                                        </div>
+                                        <Button
+                                            variant="contained"
                                             className={`mt-10 block w-full ${testimonial.btnBgColor} ${testimonial.btnTextColor} px-3 py-2 text-center text-sm font-semibold shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 rounded-full`}
                                         >
                                             Inquire Now
-                                        </button>
-                                        <p className={`mt-6 text-xs leading-5 ${testimonial.textColor}`}>
+                                        </Button>
+                                        <Typography variant="body2" className={`mt-6 text-xs leading-5 ${testimonial.textColor}`}>
                                             T&C Apply *
-                                        </p>
+                                        </Typography>
                                         <ul className="text-left mt-8">
                                             {testimonial.features.map(
                                                 (feature, index) => (

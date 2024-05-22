@@ -937,7 +937,7 @@ const ZohoFormService: React.FC<ZohoFormServiceProps> = ({ service }) => {
 		<>
 		<style>{styles}</style>
 			<div className="zf-templateWidth">
-				<form onSubmit={handleSubmit} action={'#'} name='form' method='POST' accept-charset='UTF-8' enc-type='multipart/form-data' id='form'>
+				<form onSubmit={handleSubmit} action={'#'} name='form' method='POST' enc-type='multipart/form-data' id='form'>
 					<div>
 
   <div className="zf-templateWrapper">

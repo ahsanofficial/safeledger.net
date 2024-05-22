@@ -3,8 +3,8 @@
     margin: auto;
 }
 .width{
-    width: auto;
-    height: 500px;
+    /* width: auto; */
+    /* height: 500px; */
 }
 .flex{
     display: flex;
@@ -13,6 +13,10 @@
 .desktop{
     display: flex;
     justify-content: space-evenly;
+}
+.price{
+    width: 300px !important;
+    margin: auto;
 }
 @media (min-width: 300px) and (max-width: 600px) {
 .flex{

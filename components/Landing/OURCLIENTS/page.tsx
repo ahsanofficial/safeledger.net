@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './style.module.css';
 import { Grid, IconButton, Hidden } from '@mui/material';
 import disney from '../../../public/landing/client/disney.png';
@@ -8,10 +8,17 @@ import netflix from '../../../public/landing/client/netflex.png';
 import prime from '../../../public/landing/client/peime.png';
 import { NavigateBefore, NavigateNext } from '@mui/icons-material';
 
-const Client = () => {
-    const [currentSlide, setCurrentSlide] = useState(0);
+interface Slide {
+    id: number;
+    src: string;
+}
 
-    const slides = [
+const Client: React.FC = () => {
+    const [currentSlide, setCurrentSlide] = useState<number>(0);
+    const [isMobileView, setIsMobileView] = useState<boolean>(false);
+    const [visibleSlides, setVisibleSlides] = useState<Slide[]>([]);
+
+    const slides: Slide[] = [
         { id: 0, src: netflix.src },
         { id: 1, src: disney.src },
         { id: 2, src: prime.src },
@@ -24,6 +31,31 @@ const Client = () => {
     const numVisibleSlides = 3;
     const numSlides = slides.length;
 
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobileView(window.innerWidth < 768);
+        };
+
+        // Initial check
+        handleResize();
+
+        // Add event listener
+        window.addEventListener('resize', handleResize);
+
+        // Clean up event listener on component unmount
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    useEffect(() => {
+        if (isMobileView) {
+            setVisibleSlides(slides.slice(currentSlide, currentSlide + numVisibleSlides));
+        } else {
+            setVisibleSlides(slides);
+        }
+    }, [currentSlide, isMobileView]);
+
     const nextSlide = () => {
         setCurrentSlide((currentSlide + 1) % numSlides);
     };
@@ -32,41 +64,30 @@ const Client = () => {
         setCurrentSlide((currentSlide - 1 + numSlides) % numSlides);
     };
 
-    const isMobileView = window.innerWidth < 768; // Assuming mobile view width is less than 768px
-
-    const visibleSlides = slides.slice(currentSlide, currentSlide + numVisibleSlides);
-
     return (
         <div className={`pt-16 ${styles.bg}`}>
             <Grid container spacing={3} className='items-center justify-center'>
-                {isMobileView ? (
-                    visibleSlides.map(slide => (
-                        <Grid key={slide.id} item xs={4}>
+                {visibleSlides.map(slide => (
+                    <Grid key={slide.id} item xs={isMobileView ? 4 : 3}>
+                        <div className='flex justify-center'>
                             <img src={slide.src} className={`${styles.image}`} alt="slide" />
-                        </Grid>
-                    ))
-                ) : (
-                    slides.map(slide => (
-                        <Grid key={slide.id} item xs={3}>
-                            <div className='flex justify-center'>
-                                <img src={slide.src} className={`${styles.image}`} alt="slide" />
-                            </div>
-                        </Grid>
-                    ))
-                )}
+                        </div>
+                    </Grid>
+                ))}
             </Grid>
-            <div className='flex justify-center'>
-                <Hidden mdUp>
+            {isMobileView && (
+                <div className='flex justify-center'>
                     <IconButton onClick={prevSlide} aria-label="Previous">
                         <NavigateBefore />
                     </IconButton>
                     <IconButton onClick={nextSlide} aria-label="Next">
                         <NavigateNext />
                     </IconButton>
-                </Hidden>
-            </div>
+                </div>
+            )}
         </div>
     );
 };
 
 export default Client;
+
