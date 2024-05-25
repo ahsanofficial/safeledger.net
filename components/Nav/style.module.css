@@ -13,3 +13,6 @@
 .activeMenuItem {
     border-bottom: 2px solid blue;
   }
+  .drop{
+    width: 600px;
+  }
