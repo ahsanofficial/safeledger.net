@@ -261,7 +261,7 @@ export default function Header() {
                             <a
                               href={service.href}
                               className={`${active ? 'bg-gray-100 text-gray-900' : 'text-gray-900'
-                                } block px-4 py-2 text-sm font-semibold`}
+                                } block px-4 py-5 text-sm font-semibold`}
                             >
                               <div className="flex items-center">
                                 {service.icon}
