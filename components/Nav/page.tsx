@@ -9,20 +9,20 @@ import ForumIcon from '@mui/icons-material/Forum';
 import { Web, MobileFriendly, DesignServices, Create, Cloud, Engineering, DataUsage, Security, Storefront, BuildCircle } from '@mui/icons-material';
 
 const services = [
-  { name: 'Web Development', href: '/services/1', icon: <Web /> },
-  { name: 'Mobile Development', href: '/services/2', icon: <MobileFriendly /> },
-  { name: 'UI/UX Design', href: '/services/3', icon: <DesignServices /> },
-  { name: 'Digital Marketing', href: '/services/4', icon: <DataUsage /> },
-  { name: 'SEO Optimization', href: '/services/5', icon: <DesignServices /> },
-  { name: 'Content Creation', href: '/services/6', icon: <Create /> },
-  { name: 'Cloud Services', href: '/services/7', icon: <Cloud /> },
-  { name: 'IT Consulting', href: '/services/8', icon: <Engineering /> },
-  { name: 'Data Analytics', href: '/services/9', icon: <DataUsage /> },
-  { name: 'Cyber Security', href: '/services/10', icon: <Security /> },
-  { name: 'Blockchain Development', href: '/services/11', icon: <MobileFriendly /> },
-  { name: 'AI Solutions', href: '/services/12', icon: <Create /> },
-  { name: 'E-commerce Solutions', href: '/services/13', icon: <Storefront /> },
-  { name: 'Custom Software', href: '/services/14', icon: <BuildCircle /> },
+  { name: 'London Registered Office', href: '/services/1', icon: <Web /> },
+  { name: 'Company Address Explained', href: '/services/2', icon: <MobileFriendly /> },
+  { name: 'London Business Address', href: '/services/3', icon: <DesignServices /> },
+  { name: 'Dormant Company Accounts', href: '/services/4', icon: <DataUsage /> },
+  { name: 'Company Dissolution in UK', href: '/services/5', icon: <DesignServices /> },
+  { name: 'Company Name Change in UK', href: '/services/6', icon: <Create /> },
+  { name: 'Company Secretary Services in UK', href: '/services/7', icon: <Cloud /> },
+  { name: 'Issue of Shares', href: '/services/8', icon: <Engineering /> },
+  { name: 'Transfer of Shares', href: '/services/9', icon: <DataUsage /> },
+  { name: 'Certificate of Good Standing', href: '/services/10', icon: <Security /> },
+  { name: 'Apostilled Documents Services in UK', href: '/services/11', icon: <MobileFriendly /> },
+  { name: 'Telephone Answering Service', href: '/services/12', icon: <Create /> },
+  { name: 'London Service Address', href: '/services/13', icon: <Storefront /> },
+  { name: 'VAT Registration in UK', href: '/services/14', icon: <BuildCircle /> },
 ];
 
 const people = [
