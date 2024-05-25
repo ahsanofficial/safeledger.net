@@ -7,6 +7,7 @@ import style from './style.module.css'
 import logo from '@/public/logo2.png';
 import ForumIcon from '@mui/icons-material/Forum';
 import { Web, MobileFriendly, DesignServices, Create, Cloud, Engineering, DataUsage, Security, Storefront, BuildCircle } from '@mui/icons-material';
+import { Menu } from '@headlessui/react';
 
 const services = [
   { name: 'London Registered Office', href: '/services/1', icon: <Web /> },
@@ -242,12 +243,39 @@ export default function Header() {
                 >
                   HOME
                 </Link>
-                <Link
+                {/* <Link
                   href="/services/1"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   SERVICES
-                </Link>
+                </Link> */}
+                <div className="">
+                  <Menu as="div" className="relative inline-block text-left">
+                    <Menu.Button className="inline-flex justify-center w-full rounded-lg text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+                      SERVICES
+                      <ChevronUpDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
+                    </Menu.Button>
+
+                    <Menu.Items className={`${style.new} absolute mt-2 w-full origin-top-right bg-white divide-y divide-gray-100 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none`} >
+                      {services.map((service) => (
+                        <Menu.Item key={service.name}>
+                          {({ active }) => (
+                            <a
+                              href={service.href}
+                              className={`${active ? 'bg-gray-100 text-gray-900' : 'text-gray-900'
+                                } block px-4 py-2 text-sm font-semibold`}
+                            >
+                              <div className="flex items-center">
+                                {service.icon}
+                                <span className="ml-2">{service.name}</span>
+                              </div>
+                            </a>
+                          )}
+                        </Menu.Item>
+                      ))}
+                    </Menu.Items>
+                  </Menu>
+                </div>
                 <Link
                   href="/aboutus"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"

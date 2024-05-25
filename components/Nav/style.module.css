@@ -16,3 +16,10 @@
   .drop{
     width: 600px;
   }
+
+  .new {
+    width: 280px !important;
+    height: 200px !important;
+    scroll-behavior: smooth !important;
+    overflow: scroll;
+  }
