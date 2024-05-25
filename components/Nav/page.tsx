@@ -68,7 +68,9 @@ export default function Header() {
     setIsDropdownHovered(false)
     setIsServicesHovered(false)
   }
-
+  const handleLinkClick = () => {
+    setMobileMenuOpen(false);
+  };
   return (
     <header className={style.bgColor}>
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-4" aria-label="Global">
@@ -237,18 +239,14 @@ export default function Header() {
                     </>
                   )}
                 </Disclosure>
-                <Link
-                  href="/"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  HOME
+                <Link href="/" legacyBehavior>
+                  <a
+                    onClick={handleLinkClick}
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >
+                    HOME
+                  </a>
                 </Link>
-                {/* <Link
-                  href="/services/1"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  SERVICES
-                </Link> */}
                 <div className="">
                   <Menu as="div" className="relative inline-block text-left">
                     <Menu.Button className="inline-flex justify-center w-full rounded-lg text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
@@ -276,17 +274,21 @@ export default function Header() {
                     </Menu.Items>
                   </Menu>
                 </div>
-                <Link
-                  href="/aboutus"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  ABOUT US
+                <Link href="/aboutus" legacyBehavior>
+                  <a
+                    onClick={handleLinkClick}
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >
+                    ABOUT US
+                  </a>
                 </Link>
-                <Link
-                  href="/contactus"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  CONTACT US
+                <Link href="/contactus" legacyBehavior>
+                  <a
+                    onClick={handleLinkClick}
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >
+                    CONTACT US
+                  </a>
                 </Link>
               </div>
               <div className="py-6">

@@ -1,25 +1,27 @@
-.logo{
+.logo {
     width: 128px !important;
     height: auto !important;
 }
-.fz35{
+
+.fz35 {
     font-size: 35px;
 }
 
-.bgColor{
+.bgColor {
     background-color: #dfe9ff !important;
 }
 
 .activeMenuItem {
     border-bottom: 2px solid blue;
-  }
-  .drop{
-    width: 600px;
-  }
+}
 
-  .new {
+.drop {
+    width: 600px;
+}
+
+.new {
     width: 280px !important;
     height: 200px !important;
     scroll-behavior: smooth !important;
     overflow: scroll;
-  }
+}
