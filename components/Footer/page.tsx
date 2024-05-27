@@ -11,6 +11,7 @@ import apple from "../../public/footer/Vector (5).png";
 import google from "../../public/footer/Vector (6).png";
 import dropdown from "../../public/footer/dropdown.png";
 import flag from "../../public/footer/image 13.png";
+import { Link } from "@mui/material";
 
 export const Footer = () => {
   return (
@@ -21,35 +22,57 @@ export const Footer = () => {
             <h4 className="font-bold  text-left font-poppins text-xl font-bold leading-normal text-gray-400">
               SOLUTIONS FOR BUSINESS
             </h4>
-            <p className="text-lg font-normal  mt-4 text-left leading-tight text-white">
-              Office Address Service
-            </p>
-            <p className="text-lg font-normal  mt-4 text-left leading-tight text-white">
-              Registered Office Service
-            </p>
-            <p className="text-lg font-normal  mt-4 text-left leading-tight text-white">
-              Dormant Company Account Service
-            </p>
-            <p className="text-lg font-normal  mt-4 text-left leading-tight text-white">
-              Company Registration
-            </p>
-            <p className="text-lg font-normal  mt-4 text-left leading-tight text-white">
-              Business Bank Account
-            </p>
-            <p className="text-lg font-normal  mt-4 text-left leading-tight text-white">
-              VAT Registration
-            </p>
+            <Link href="/services/1" className="no-underline">
+              <p className="text-lg font-normal  mt-4 text-left leading-tight text-white">
+                London Registered Office
+              </p>
+            </Link>
+            <Link href="/services/2" className="no-underline">
+              <p className="text-lg font-normal  mt-4 text-left leading-tight text-white">
+                Company Address Explained
+              </p>
+            </Link>
+
+            <Link href="/services/3" className="no-underline">
+              <p className="text-lg font-normal  mt-4 text-left leading-tight text-white">
+                London Business Address
+              </p>
+            </Link>
+
+            <Link href="/services/4" className="no-underline">
+              <p className="text-lg font-normal  mt-4 text-left leading-tight text-white">
+                Dormant Company Accounts
+              </p>
+            </Link>
+
+            <Link href="/services/5" className="no-underline">
+              <p className="text-lg font-normal  mt-4 text-left leading-tight text-white">
+                Company Dissolution in UK
+              </p>
+            </Link>
+
+            <Link href="/services/14" className="no-underline">
+              <p className="text-lg font-normal  mt-4 text-left leading-tight text-white">
+                VAT Registration in UK
+              </p>
+            </Link>
+
           </div>
           <div className="w-257 h-30 mt-10">
             <h4 className="font-bold  text-left font-poppins text-xl font-bold leading-normal text-gray-400">
               COMPANY
             </h4>
-            <p className="text-base font-normal mt-2 text-left leading-tight text-white">
-              About Us
-            </p>
-            <p className="text-lg font-normal  mt-4 text-left leading-tight text-white">
-              Contact Us
-            </p>
+            <Link href="/aboutus" className="no-underline">
+              <p className="text-base font-normal mt-2 text-left leading-tight text-white">
+                About Us
+              </p>
+            </Link>
+            <Link href="/contactus" className="no-underline">
+              <p className="text-lg font-normal  mt-4 text-left leading-tight text-white">
+                Contact Us
+              </p>
+            </Link>
+
             <p className="text-lg font-normal  mt-4 text-left leading-tight text-white">
               Privacy Policy
             </p>
