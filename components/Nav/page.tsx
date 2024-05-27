@@ -46,31 +46,48 @@ function classNames(...classes: string[]) {
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [selected, setSelected] = useState(people[0])
-  const [isServicesHovered, setIsServicesHovered] = useState(false)
-  const [isDropdownHovered, setIsDropdownHovered] = useState(false)
+  const [isServicesHovered, setIsServicesHovered] = useState(false);
+  const [isDropdownHovered, setIsDropdownHovered] = useState(false);
+  const [hideTimeout, setHideTimeout] = useState<NodeJS.Timeout | null>(null);
 
   const handleMouseEnter = () => {
-    setIsServicesHovered(true)
-  }
+    if (hideTimeout) {
+      clearTimeout(hideTimeout);
+      setHideTimeout(null);
+    }
+    setIsServicesHovered(true);
+  };
 
   const handleMouseLeave = () => {
-    if (!isDropdownHovered) {
-      setIsServicesHovered(false)
-    }
-  }
+    const timeout = setTimeout(() => {
+      if (!isDropdownHovered) {
+        setIsServicesHovered(false);
+      }
+    }, 250);
+    setHideTimeout(timeout);
+  };
 
   const handleDropdownMouseEnter = () => {
-    setIsDropdownHovered(true)
-    setIsServicesHovered(true)
-  }
+    if (hideTimeout) {
+      clearTimeout(hideTimeout);
+      setHideTimeout(null);
+    }
+    setIsDropdownHovered(true);
+    setIsServicesHovered(true);
+  };
 
   const handleDropdownMouseLeave = () => {
-    setIsDropdownHovered(false)
-    setIsServicesHovered(false)
-  }
+    const timeout = setTimeout(() => {
+      setIsDropdownHovered(false);
+      setIsServicesHovered(false);
+    }, 1000);
+    setHideTimeout(timeout);
+  };
+
   const handleLinkClick = () => {
     setMobileMenuOpen(false);
   };
+
   return (
     <header className={style.bgColor}>
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-4" aria-label="Global">
@@ -247,32 +264,45 @@ export default function Header() {
                     HOME
                   </a>
                 </Link>
-                <div className="">
-                  <Menu as="div" className="relative inline-block text-left">
-                    <Menu.Button className="inline-flex justify-center w-full rounded-lg text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+                <div className="hidden lg:flex lg:gap-x-12">
+                  <div
+                    className="relative"
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                  >
+                    <Link
+                      href="#"
+                      className="text-sm font-semibold leading-6 text-gray-900 inline-flex items-center"
+                    >
                       SERVICES
-                      <ChevronUpDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
-                    </Menu.Button>
-
-                    <Menu.Items className={`${style.new} absolute mt-2 w-full origin-top-right bg-white divide-y divide-gray-100 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none`} >
-                      {services.map((service) => (
-                        <Menu.Item key={service.name}>
-                          {({ active }) => (
-                            <a
-                              href={service.href}
-                              className={`${active ? 'bg-gray-100 text-gray-900' : 'text-gray-900'
-                                } block px-4 py-5 text-sm font-semibold`}
-                            >
-                              <div className="flex items-center">
+                      <ChevronDownIcon className="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500" aria-hidden="true" />
+                    </Link>
+                    {(isServicesHovered || isDropdownHovered) && (
+                      <div
+                        className="absolute z-10 mt-3 w-screen max-w-md -translate-x-1/2 transform px-2 sm:px-0 lg:left-1/2 lg:-translate-x-1/2"
+                        onMouseEnter={handleDropdownMouseEnter}
+                        onMouseLeave={handleDropdownMouseLeave}
+                      >
+                        <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                          <div className="relative grid gap-6 bg-white p-5 lg:grid-cols-2">
+                            {services.map((service) => (
+                              <Link
+                                key={service.href}
+                                href={service.href}
+                                className="flex items-start rounded-lg p-1 hover:bg-gray-50"
+                                onClick={handleLinkClick}
+                              >
                                 {service.icon}
-                                <span className="ml-2">{service.name}</span>
-                              </div>
-                            </a>
-                          )} 
-                        </Menu.Item>
-                      ))}
-                    </Menu.Items>
-                  </Menu>
+                                <div className="ml-4">
+                                  <p className="text-sm font-medium text-gray-900">{service.name}</p>
+                                </div>
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </div>
                 </div>
                 <Link href="/aboutus" legacyBehavior>
                   <a
