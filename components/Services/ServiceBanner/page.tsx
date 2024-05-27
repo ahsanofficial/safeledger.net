@@ -15,8 +15,8 @@ const ServiceBanner: React.FC<ServiceBannerProps> = ({ Data }) => {
                         <Typography variant="h4" gutterBottom className='text-5xl font-bold	sm:mt-0 lg:mt-0 mt-20 mb-6'>
                             {Data.Title}
                         </Typography>
-                        <p>Author: {Data.Author}</p>
-                        <p className='sm:mb-0 lg:mb-0 mb-6'>Keywords: {Data.Keywords}</p>
+                        {/* <p>Author: {Data.Author}</p> */}
+                        {/* <p className='sm:mb-0 lg:mb-0 mb-6'>Keywords: {Data.Keywords}</p> */}
                     </div>
                 </Grid>
                 <Grid item xs={12} sm={3} className={`bg-indigo-700	rounded-3xl ${styles.margin}`}>
