@@ -9,14 +9,14 @@ const ServiceBanner: React.FC<ServiceBannerProps> = ({ Data }) => {
 
     return (
         <div className={styles.Backgound}>
-            <Grid container spacing={3} className='items-center justify-center'>
+            <Grid container spacing={3}  className={`items-center justify-center ${styles.back}`}>
                 <Grid item xs={12} sm={5} >
                     <div className={`${styles.textContainer}`}>
-                        <Typography variant="h4" gutterBottom className='text-5xl font-bold	'>
+                        <Typography variant="h4" gutterBottom className='text-5xl font-bold	sm:mt-0 lg:mt-0 mt-20 mb-6'>
                             {Data.Title}
                         </Typography>
                         <p>Author: {Data.Author}</p>
-                        <p>Keywords: {Data.Keywords}</p>
+                        <p className='sm:mb-0 lg:mb-0 mb-6'>Keywords: {Data.Keywords}</p>
                     </div>
                 </Grid>
                 <Grid item xs={12} sm={3} className={`bg-indigo-700	rounded-3xl ${styles.margin}`}>

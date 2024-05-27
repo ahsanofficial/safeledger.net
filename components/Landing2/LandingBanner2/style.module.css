@@ -3,7 +3,7 @@
   background-image: url('../../../public/landing2/landingbanner2/Rectangle 21.png');
   background-size: cover;
   background-position: center;
-  height: 762px;
+  height: 720px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,7 +12,7 @@
 }
 
 .formContainer {
-  padding: 40px;
+  padding: 20px;
   margin-right: 20px;
   background-color: #4338ca;
   border-radius: 6%;
@@ -21,7 +21,7 @@
 
 .formContainerFixed {
   position: fixed;
-  top: 100px; /* Adjust this value to control the distance from the top */
+  top: 38%; /* Adjust this value to control the distance from the top */
   right: 20px; /* Adjust this value to control the distance from the right */
   padding: 40px;
   background-color: #4338ca;

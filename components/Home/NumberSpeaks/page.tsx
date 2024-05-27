@@ -11,7 +11,7 @@ import {
 } from "@mui/material";
 import React, { useState } from "react";
 import styles from "./style.module.css";
-import bg from "../../../public/home/numberspeaks/numberspeak-bg.jpeg";
+import bg from "../../../public/home/numberspeaks/number.png";
 import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 const number = [
@@ -83,7 +83,7 @@ export const NumberSpeaks = () => {
         Number speaks <br /> for
         <span className="text-indigo-600"> Safe Ledgar</span>
       </h4>
-      <div className="relative isolate overflow-hidden bg-gray-900 py-10 sm:py-10">
+      <div className="relative isolate overflow-hidden py-10 sm:py-10">
         <img
           src={bg.src}
           alt=""

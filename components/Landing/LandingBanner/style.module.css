@@ -25,7 +25,7 @@
 }
 
 .banner {
-  margin-top: 46px;
+  /* margin-top: 46px; */
 }
 
 .border {
@@ -80,15 +80,20 @@
   .Backgound {
     height: 380px;
   }
-
+  .banner {
+    margin-top: 0px;
+  }
+  .formContainer{
+    padding: 5px;
+  }
   .margin {
-    margin: 0px 20px 20px 43px !important;
+    margin: 0px 20px 20px 3px !important;
     position: absolute;
     top: 95%;
   }
 
   .textContainer {
-    padding: 5px;
+    /* padding: 5px; */
   }
 
   .border {
@@ -114,7 +119,7 @@
   }
 
   .review {
-    font-size: 8px !important;
+    font-size: 6px !important;
   }
 
   .img {

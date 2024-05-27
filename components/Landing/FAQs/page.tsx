@@ -7,9 +7,10 @@ const Faq = () => {
 
     return (
         <div >
-            <div className={`bg-indigo-700 p-6`} >
-                <div className={`flex justify-around items-center	${styles.bg}`} >
-                    <h1 className='text-white font-medium	'>Book a free consultation with our company formation experts</h1><Button variant="contained" className={`bg-indigo-400`}>BOOK FREE CONSULTATION</Button>
+            <div className={`p-6 ${styles.book}`}>
+                <div className={`sm:flex lg:flex justify-around items-center	${styles.bg}`} >
+                    <h1 className='text-white font-medium	'>Book a free consultation with our company formation experts</h1>
+                    <button className={`bg-white text-blue-600 sm:mt-0 lg:mt-0 mt-6 px-6 py-2 rounded-lg`}>BOOK FREE CONSULTATION</button>
                 </div>
             </div>
             <div className={`${styles.bg} mt-6`}>

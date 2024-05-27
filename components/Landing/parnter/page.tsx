@@ -84,7 +84,7 @@ const Partner: React.FC = () => {
                         .slice(currentIndex, currentIndex + testimonialsPerPage)
                         .map((testimonial) => (
                             <Grid item xs={12} sm={6} md={2} key={testimonial.id}>
-                                <Box style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', marginBottom: '16px', padding: '16px', borderRadius: '8px' }}>
+                                <Box style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', marginBottom: '16px', padding: '16px', borderRadius: '8px', alignContent: 'normal', justifyContent: 'center' }}>
                                     <div>
                                         <Avatar alt={testimonial.name} src={testimonial.avatarUrl} style={{ width: '64px', height: '64px', margin: 'auto' }} />
                                     </div>

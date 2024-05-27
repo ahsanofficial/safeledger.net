@@ -1,54 +1,41 @@
-@media (max-width: 425px) {
-  .textContainer {
-    margin-top: 507px;
-  }
+.back{
+  width: 90%;
+  margin: auto;
 }
-
 .Backgound {
   background-size: cover;
   background-position: center;
   height: 80vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  @media (min-width: 1440px) {
-    .Background {
-      height: 140vh;
-     
-    }
-  }
-  @media (max-width: 425px) {
-    .Backgound {
-      margin-top: 100px;
-      
-    }
-  }
+  /* justify-content: center; */
 }
 @media (min-width: 300px) and (max-width: 450px) {
-  .Backgound {
-    height: 40vh !important;
+  .textContainer {
+    padding: 0px;
   }
+  .Backgound{
+    height:auto;
+    margin-bottom: 25px;
+  }
+
 }
 .textContainer {
  
-  padding: 20px;
   border-radius: 10px;
-  padding-bottom: 90px;
+  /* padding-bottom: 90px; */
  
 }
 
 .formContainer {
   padding: 20px;
-
   margin-right: 20px;
 }
 
 .margin {
-  margin-top: -29px;
-  height: 80%;
-  @media (max-width: 425px) {
-    width: 337px;
-  }
+  /* margin-top: -29px; */
+  /* height: 80%; */
+  margin: auto;
 }
 .image {
   width: auto;

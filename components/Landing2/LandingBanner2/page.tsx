@@ -6,14 +6,14 @@ import group from "../../../public/landing2/landingbanner2/Group 40.png";
 import ZohoFormService from "@/components/Form/ZohoForm";
 
 const HeroSection: React.FC = () => {
-  const isDesktop = useMediaQuery('(min-width:768px)'); // Media query for desktop
-  const isMobile = !isDesktop; // Assume mobile if not desktop
+  const isDesktop = useMediaQuery('(min-width:768px)');
+  const isMobile = !isDesktop; 
 
   const [isFixed, setIsFixed] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 2900) {
+      if (window.scrollY > 2280) {
         setIsFixed(false);
       } else {
         setIsFixed(true);
@@ -34,7 +34,7 @@ const HeroSection: React.FC = () => {
           <h1 className="text-5xl text-black font-semibold">
             Company registration in UK
           </h1>
-          <h2 className="text-4xl text-blue-600 font-normal">
+          <h2 className="text-4xl text-blue-600 font-normal mt-4">
             Register your company
           </h2>
           <h2 className="text-4xl text-blue-600 font-normal">

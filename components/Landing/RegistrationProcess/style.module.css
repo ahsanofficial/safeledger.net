@@ -1,5 +1,5 @@
 .Backgound {
-  background-image: url('../../../public/landing/RegistrationProcess/image1.jpeg');
+  background-image: url('../../../public/landing/RegistrationProcess/website.jpg');
   background-size: cover;
   background-position: center;
   height: 75vh;
@@ -7,53 +7,22 @@
   align-items: center;
   justify-content: center;
 }
-
-/* .card {
-  height: 400px;
-  width: 400px;
-  border-radius: 50%;
-  background-color: aliceblue;
-} */
-.circle {
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  background-color: rgb(255, 255, 255);
-  /* You can change the background color here */
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  opacity: 80%;
-  margin-top: 20px;
-}
-
-.flex {
-  display: flex;
-}
-
-.size {
-  width: auto;
-  height: 300px !important;
-  margin: auto;
-  margin-top: 20px;
-}
-
-.image2 {
+.mobile{
   display: none;
 }
 
-@media (min-width: 300px) and (max-width: 600px) {
-  .image2 {
-    display: block;
-  }
-.image1{
-  display: none;
-}
-  .flex {
-    display: block;
-  }
+@media (min-width: 300px) and (max-width: 450px) {
+
   .Backgound{
-    height: auto;
+    display: none;
+  }
+  .mobile{
+    background-image: url('../../../public/landing/RegistrationProcess/mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

@@ -80,7 +80,7 @@ const HeroSection: React.FC = () => {
                                 </div>
                             </div>
                             <div className='flex items-center mt-6'>
-                                <Typography variant="body1" className={`text-2xl text-white mr-6 ${styles.excellent}`} >Excellent</Typography>
+                                <Typography variant="body1" className={`text-2xl text-white sm:mr-6 lg:mr-6 ${styles.excellent}`} >Excellent</Typography>
                                 <Rating
                                     name="customized-empty"
                                     defaultValue={4}
@@ -89,7 +89,7 @@ const HeroSection: React.FC = () => {
                                     icon={customSelectedIcon}
                                     className={`${styles.excellent}`}
                                 />
-                                <Typography className={`ml-6 text-sm text-white ${styles.review}`}>Based on <span className='text-red-700'>51,789 reviews</span></Typography>
+                                <Typography className={`sm:ml-6 lg:ml-6 text-sm text-white ${styles.review}`}>Based on <span className='text-red-700'>51,789 reviews</span></Typography>
                             </div>
                         </div>
                     </Grid>
