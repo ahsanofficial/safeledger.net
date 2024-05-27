@@ -13,7 +13,7 @@ const ContactUsBanner: React.FC = () => {
                     <div className={styles.textContainer}>
                         <Typography variant="h4" gutterBottom className={`${styles.ctext} text-6xl font-bold`}>
                             Contact Us
-                            <Button variant="contained" className={` ${styles.cbtn} px-8 py-2 rounded-xl mt-60`}>+91 84477 46183</Button>
+                            <Button variant="contained" className={` ${styles.cbtn} hover:text-white px-8 py-2 rounded-xl mt-60`}>+91 84477 46183</Button>
                         </Typography>
                     </div>
                 </Grid>
