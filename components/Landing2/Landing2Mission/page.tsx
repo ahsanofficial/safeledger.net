@@ -208,7 +208,7 @@ const Landing2Mission = () => {
 
   return (
     <div className={`pb-5 ${styles.bg}`}>
-      <p className='text-3xl text-center pt-10'>Quick Guide to Services <span className='text-indigo-600'>We Offer</span></p>
+      <p className='text-xl text-center pt-10'>Quick Guide to Services <span className='text-indigo-600'>We Offer</span></p>
       <Box sx={{ position: 'relative', marginBottom: '16px', marginTop: '25px' }}>
         <IconButton sx={{
           position: 'absolute', left: '8%', top: '50%', transform: 'translateY(-50%)', transition: 'transform 0.3s ease-in-out',

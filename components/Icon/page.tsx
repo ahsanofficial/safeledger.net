@@ -24,11 +24,11 @@ const RightIcon: React.FC = () => {
         <div className={styles.whatsappIconContainer}>
           <img src={whatsapp.src} className={styles.what}/>
         </div>
-        <div className={styles.phoneNumberContainer}>
-          <img src={number.src} className={styles.phone}/>
+        <div className={styles.whatsappIconContainer}>
+          <img src={number.src} className={styles.what}/>
         </div>
-        <div className={styles.phoneNumberContainer}>
-          <img src={chat.src} className={styles.chatbot}/>
+        <div className={styles.whatsappIconContainer}>
+          <img src={chat.src} className={styles.what}/>
         </div>
       </div>
       <div className={`${styles.new}  mb-36`}>

@@ -57,7 +57,7 @@ const HeroSection: React.FC = () => {
       <div>
         <div>
           {isMobile && (
-            <div className={styles.container}>
+            <div className={`mb-8 ${styles.container}`} >
               <div className={styles.formContainer}>
                 <Typography
                   variant="h6"
