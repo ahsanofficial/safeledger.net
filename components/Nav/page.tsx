@@ -264,7 +264,7 @@ export default function Header() {
                     HOME
                   </a>
                 </Link>
-                <div className="hidden lg:flex lg:gap-x-12">
+                <div className=" lg:flex lg:gap-x-12">
                   <div
                     className="relative"
                     onMouseEnter={handleMouseEnter}
@@ -279,12 +279,12 @@ export default function Header() {
                     </Link>
                     {(isServicesHovered || isDropdownHovered) && (
                       <div
-                        className="absolute z-10 mt-3 w-screen max-w-md -translate-x-1/2 transform px-2 sm:px-0 lg:left-1/2 lg:-translate-x-1/2"
+                        className="absolute z-10 mt-3 w-screen max-w-md sm:-translate-x-1/2 lg:-translate-x-1/2 transform px-2 sm:px-0 lg:left-1/2"
                         onMouseEnter={handleDropdownMouseEnter}
                         onMouseLeave={handleDropdownMouseLeave}
                       >
                         <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                          <div className="relative grid gap-6 bg-white p-5 lg:grid-cols-2">
+                          <div className={`relative grid gap-6 bg-white p-5 lg:grid-cols-2 ${style.service}`}>
                             {services.map((service) => (
                               <Link
                                 key={service.href}

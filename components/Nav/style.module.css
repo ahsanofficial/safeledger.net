@@ -14,7 +14,10 @@
 .activeMenuItem {
     border-bottom: 2px solid blue;
 }
-
+.service{
+    height: 300px !important;
+    overflow-y: scroll;
+}
 .drop {
     width: 600px;
 }

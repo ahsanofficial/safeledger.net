@@ -17,7 +17,7 @@ const ContactUsBanner: React.FC = () => {
                         </Typography>
                     </div>
                 </Grid>
-                <div className={`bg-indigo-700	rounded-3xl ${styles.margin}`}>
+                <div className={`bg-indigo-700 p-4	rounded-3xl ${styles.margin}`}>
                     <div className={`${styles.formContainer}`}>
                         <Typography variant="h6" gutterBottom className='text-white	text-3xl text-center'>
                             Let’s talk with us!
