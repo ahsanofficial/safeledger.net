@@ -75,7 +75,7 @@ export const Landing2Caring = () => {
       {" "}
       <div className="py-10 px-100">
         {" "}
-        <h1 className="text-black text-4xl text-center">
+        <h1 className="text-black text-3xl text-center">
           <strong className="text-blue-600 font-normal">&nbsp;Caring</strong>{" "}
           for teammates as we care for{" "}
           <strong className="text-blue-600 font-normal">&nbsp;customers</strong>

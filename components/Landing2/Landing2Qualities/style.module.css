@@ -5,7 +5,7 @@
 }
 
 .gap {
-  gap: 60px !important;
+  gap: 40px !important;
 }
 
 @media (min-width: 300px) and (max-width: 450px) {

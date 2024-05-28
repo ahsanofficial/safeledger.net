@@ -66,7 +66,7 @@ export const Landing2Services = () => {
         <div className={`pb-5 ${styles.bg}`}>
             <div className="py-10 sm:px-40 lg:px-40 px-2">
                 {" "}
-                <h1 className="text-black text-4xl text-center">
+                <h1 className="text-black text-4xl">
                     Services that give you
                     <strong className="text-blue-600 font-normal">
                         &nbsp;peace of mind
@@ -74,10 +74,10 @@ export const Landing2Services = () => {
                 </h1>
             </div>
             <Box sx={{ position: 'relative', marginBottom: '16px', marginTop: '25px' }}>
-                <IconButton sx={{ position: 'absolute', left: '6%', top: '50%', transform: 'translateY(-50%)', '@media (max-width: 600px)': { left: '-12%', } }} onClick={prevTestimonial}>
+                <IconButton sx={{ position: 'absolute', left: '-4%', top: '50%', transform: 'translateY(-50%)', '@media (max-width: 600px)': { left: '-12%', } }} onClick={prevTestimonial}>
                     <NavigateBeforeIcon />
                 </IconButton>
-                <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-evenly', gap: '0px', overflowX: 'auto' }}>
+                <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'flex-start', gap: '30px', overflowX: 'auto' }}>
                     {offers.map((offer, index) => (
                         (index >= currentIndex && index < currentIndex + testimonialsPerPage) && (
                             <Box key={offer.id} sx={{ maxWidth: 418, minWidth: 250, maxHeight: '505px', marginBottom: '16px', border: '1px solid #ccc', borderRadius: '15px' }}>
@@ -102,7 +102,7 @@ export const Landing2Services = () => {
                         )
                     ))}
                 </Box>
-                <IconButton sx={{ position: 'absolute', right: '6%', top: '50%', transform: 'translateY(-50%)', '@media (max-width: 600px)': { right: '-12%', } }} onClick={prevTestimonial}>
+                <IconButton sx={{ position: 'absolute', right: '20%', top: '50%', transform: 'translateY(-50%)', '@media (max-width: 600px)': { right: '-12%', } }} onClick={prevTestimonial}>
 
                     <NavigateNextIcon />
                 </IconButton>
