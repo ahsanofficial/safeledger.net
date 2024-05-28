@@ -31,10 +31,10 @@ const HeroSection: React.FC = () => {
     <div className={styles.Backgound}>
       <div className="flex items-center justify-around">
         <div >
-          <h1 className="text-5xl text-black font-semibold">
+          <h1 className="text-5xl text-black font-semibold sm:ml-0 lg:ml-0 ml-4">
             Company registration in UK
           </h1>
-          <h2 className="text-4xl text-blue-600 font-normal mt-4">
+          <h2 className="text-4xl text-blue-600 font-normal mt-4 sm:ml-0 lg:ml-0 ml-4">
             Register your company Online hassle-free
           </h2>
           <img src={group.src} alt="group" />
@@ -57,7 +57,7 @@ const HeroSection: React.FC = () => {
       <div>
         <div>
           {isMobile && (
-            <div >
+            <div className={styles.container}>
               <div className={styles.formContainer}>
                 <Typography
                   variant="h6"
