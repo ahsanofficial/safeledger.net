@@ -232,6 +232,7 @@ const ZohoFormService: React.FC<ZohoFormServiceProps> = ({ service }) => {
 	}
 	
 	.zf-tempFrmWrapper .zf-tempContDiv {
+		width: 230px;
 		margin:0;
 		padding:0;
 	}

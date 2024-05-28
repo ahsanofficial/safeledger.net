@@ -11,6 +11,7 @@ import apple from "../../public/footer/Vector (5).png";
 import google from "../../public/footer/Vector (6).png";
 import dropdown from "../../public/footer/dropdown.png";
 import flag from "../../public/footer/image 13.png";
+import instagram  from "../../public/footer/instagram.png";
 import { Link } from "@mui/material";
 
 export const Footer = () => {
@@ -84,7 +85,7 @@ export const Footer = () => {
 
         <div className={`${styles.info} mt-10`}>
           <div>
-            <div className="flex justify-end">
+            <div className="flex justify-center">
               <Image
                 className={`${styles.logo} flex justify-end text-end`}
                 src={logo}
@@ -95,12 +96,9 @@ export const Footer = () => {
               Registered Address in UK: 124-128, City Road, London, England,
               EC1V 2NX
             </p>
-            <div className="flex justify-end gap-6  flex-row mt-8">
-              <Image src={fb} alt="" />
-              <Image src={icon1} alt="" />
-              <Image src={icon2} alt="" />
-              <Image src={icon3} alt="" />
-              <Image src={icon4} alt="" />
+            <div className="flex justify-center items-center gap-6  flex-row mt-8">
+              <Image src={icon3} alt="" className={styles.link}/>
+              <Image src={instagram} alt=""/>
             </div>
             <div className="flex flex-row items-center gap-4 mt-8">
               <div className={`${styles.store}`}>

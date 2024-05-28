@@ -58,7 +58,10 @@
 .Terms {
   width: 40%;
 }
-
+.link{
+  width: 42px;
+  height: 38px;
+}
 /* Media Query for Mobile Devices */
 @media (max-width: 640px) {
   .bg{
@@ -78,7 +81,9 @@
     width: 100%; /* Set width to 100% for full width on mobile */
     margin-top: 10px; /* Adjust margin for better spacing */
   }
-
+.store{
+  display: none;
+}
   .Terms {
     width: 80%; /* Adjust width for better mobile view */
     margin: 20px auto; /* Center and add margin for better spacing */

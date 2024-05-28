@@ -19,7 +19,7 @@ const RightIcon: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className={styles.bg}>
       <div className={styles.whatsappContainer}>
         <div className={styles.whatsappIconContainer}>
           <img src={whatsapp.src} className={styles.what}/>

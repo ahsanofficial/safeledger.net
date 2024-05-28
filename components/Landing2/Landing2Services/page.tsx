@@ -64,7 +64,7 @@ export const Landing2Services = () => {
     };
     return (
         <div className={`pb-5 ${styles.bg}`}>
-            <div className="py-10 sm:px-40 lg:px-40 px-2">
+            <div className="py-10 sm:px-40 lg:px-40 pr-2">
                 {" "}
                 <h1 className="text-black text-4xl">
                     Services that give you

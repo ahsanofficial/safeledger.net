@@ -88,4 +88,7 @@
     .whatsNew {
         right: -26px;
     }
+    .bg{
+        display: none;
+    }
 }

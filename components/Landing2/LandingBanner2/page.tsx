@@ -13,7 +13,7 @@ const HeroSection: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 2180) {
+      if (window.scrollY > 2225) {
         setIsFixed(false);
       } else {
         setIsFixed(true);
