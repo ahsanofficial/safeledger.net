@@ -272,7 +272,7 @@ export default function Header() {
                   >
                     <Link
                       href="#"
-                      className="text-sm font-semibold leading-6 text-gray-900 inline-flex items-center"
+                      className="text-lg font-semibold leading-6 text-gray-900 inline-flex items-center"
                     >
                       SERVICES
                       <ChevronDownIcon className="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500" aria-hidden="true" />
