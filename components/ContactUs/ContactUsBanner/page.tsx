@@ -17,7 +17,7 @@ const ContactUsBanner: React.FC = () => {
                         </Typography>
                     </div>
                 </Grid>
-                <Grid item xs={12} sm={3} className={`bg-indigo-700	rounded-3xl ${styles.margin}`}>
+                <div className={`bg-indigo-700	rounded-3xl ${styles.margin}`}>
                     <div className={`${styles.formContainer}`}>
                         <Typography variant="h6" gutterBottom className='text-white	text-3xl text-center'>
                             Let’s talk with us!
@@ -25,7 +25,7 @@ const ContactUsBanner: React.FC = () => {
                         <p className='text-white text-center mb-6'>If you have any questions, connect us.</p>
                         <ZohoFormService service={''} />
                     </div>
-                </Grid>
+                </div>
             </Grid>
         </div>
     );

@@ -1,43 +1,23 @@
-/* style.module.css */
 .Backgound {
-  position: relative;
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  @media (max-width: 425px) {
-    padding: 26rem 4rem 1rem 0rem;
-  }
-}
-
-.Backgound::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: url("../../../public/contactus/bg.jpeg");
+  background-image: url("../../../public/contactus/image.jpg");
   background-size: cover;
   background-position: center;
-  opacity: 0.4;
   width: auto;
+  height: 520px;
+  align-items: center;
+  justify-content: center;
 }
 
 .textContainer {
   padding: 20px;
   border-radius: 10px;
-  opacity: 0.9;
+  opacity: 1;
   color: #244ba8;
   position: relative;
   bottom: 60px;
 }
 
-.formContainer {
-  padding: 20px 5px;
-  margin-right: 20px;
-  opacity: 0.9;
-}
+
 
 .image {
   width: auto;
@@ -60,18 +40,21 @@
 .margin {
   margin-top: 20px;
   /* Add margin for better spacing */
-  opacity: 0.9;
+  opacity: 1;
 }
 
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
   .textContainer {
-    margin-top: 40px;
+    /* margin-top: 40px; */
     margin-bottom: 20px;
     padding: 0px !important;
     position: absolute;
     top: 10%;
-    right: -2%;
+  }
+
+  .Backgound {
+    height: auto;
   }
 
   .ctext {
@@ -87,13 +70,13 @@
   }
 
   .Backgound {
-    height: 50vh;
+    height: auto;
   }
 
   .margin {
-    margin: 20px -34px 0px 13px !important;
-    position: absolute;
-    top: 50%;
+    /* margin: 20px -34px 0px 13px !important; */
+    padding: 10px;
+    margin-top: 160px;
   }
 
   .formContainer {
