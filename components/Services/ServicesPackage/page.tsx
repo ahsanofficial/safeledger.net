@@ -13,7 +13,7 @@ export const ServicesPackage = () => {
         <div>
           <span className={`${styles.left_border}`}></span>
         </div>
-        <div className=" sm: text-base lg: text-3xl font-normal font-brfirma text-left leading-tight">
+        <div className=" sm:my-0 lg:my-0 my-4 font-normal font-brfirma text-left leading-tight">
           {Data.Banner_Content}
         </div>
       </div>
