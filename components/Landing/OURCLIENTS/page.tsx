@@ -1,94 +1,104 @@
 "use client"
-import React, { useState, useEffect } from 'react';
-import styles from './style.module.css';
-import { Grid, IconButton, Hidden, Typography } from '@mui/material';
-import disney from '../../../public/landing/client/disney.png';
-import mac from '../../../public/landing/client/mac.png';
-import netflix from '../../../public/landing/client/netflex.png';
-import prime from '../../../public/landing/client/peime.png';
-import { NavigateBefore, NavigateNext } from '@mui/icons-material';
 
-interface Slide {
-    id: number;
-    src: string;
-}
+import React, { useState } from 'react';
+import { Box, Typography, IconButton, Avatar, Grid } from '@mui/material';
+import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import image1 from '../../../public/landing/client/oyo.webp';
+import image2 from '../../../public/landing/client/myoperator.webp';
+import image3 from '../../../public/landing/client/hsbc.webp';
+import image4 from '../../../public/landing/client/hdfc.webp';
+import image5 from '../../../public/landing/client/aws.webp';
+import image6 from '../../../public/landing/client/yesbank.webp';
+import image7 from '../../../public/landing/client/zoho.webp';
+import styles from './style.module.css';
+
+const testimonials = [
+    {
+        id: 1,
+        avatarUrl: image1.src,
+    },
+    {
+        id: 2,
+        avatarUrl: image2.src,
+    },
+    {
+        id: 3,
+        avatarUrl: image3.src,
+    },
+    {
+        id: 4,
+        avatarUrl: image4.src,
+    },
+    {
+        id: 5,
+        avatarUrl: image5.src,
+    },
+    {
+        id: 6,
+        avatarUrl: image6.src,
+    },
+    {
+        id: 7,
+        avatarUrl: image7.src,
+    },
+];
 
 const Client: React.FC = () => {
-    const [currentSlide, setCurrentSlide] = useState<number>(0);
-    const [isMobileView, setIsMobileView] = useState<boolean>(false);
-    const [visibleSlides, setVisibleSlides] = useState<Slide[]>([]);
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [isMobile, setIsMobile] = useState(false);
+    const testimonialsPerPage = isMobile ? 1 : 5;
 
-    const slides: Slide[] = [
-        { id: 0, src: netflix.src },
-        { id: 1, src: disney.src },
-        { id: 2, src: prime.src },
-        { id: 3, src: prime.src },
-        { id: 4, src: mac.src },
-        { id: 5, src: mac.src },
-        { id: 6, src: mac.src },
-    ];
+    const nextTestimonial = () => {
+        if (currentIndex + testimonialsPerPage < testimonials.length) {
+            setCurrentIndex(prevIndex => prevIndex + 1);
+        }
+    };
 
-    const numVisibleSlides = 3;
-    const numSlides = slides.length;
+    const prevTestimonial = () => {
+        if (currentIndex > 0) {
+            setCurrentIndex(prevIndex => prevIndex - 1);
+        }
+    };
 
-    useEffect(() => {
-        const handleResize = () => {
-            setIsMobileView(window.innerWidth < 768);
-        };
+    const handleResize = () => {
+        setIsMobile(window.innerWidth <= 600);
+    };
 
-        // Initial check
-        handleResize();
-
-        // Add event listener
+    React.useEffect(() => {
         window.addEventListener('resize', handleResize);
-
-        // Clean up event listener on component unmount
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
+        handleResize();
+        return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    useEffect(() => {
-        if (isMobileView) {
-            setVisibleSlides(slides.slice(currentSlide, currentSlide + numVisibleSlides));
-        } else {
-            setVisibleSlides(slides);
-        }
-    }, [currentSlide, isMobileView]);
-
-    const nextSlide = () => {
-        setCurrentSlide((currentSlide + 1) % numSlides);
-    };
-
-    const prevSlide = () => {
-        setCurrentSlide((currentSlide - 1 + numSlides) % numSlides);
-    };
-
     return (
-        <div className={`pt-16 ${styles.bg}`}>
+        <div className={`pt-10 ${styles.bg}`}>
             <Typography className='text-3xl	text-center mb-6'>OUR CLIENTS</Typography>
-            <Grid container spacing={3} className='items-center justify-center '>
-                {visibleSlides.map(slide => (
-                    <Grid key={slide.id} item xs={isMobileView ? 4 : 3}>
-                        <div className='flex justify-center content-normal'>
-                            <img src={slide.src} className={`${styles.image}`} alt="slide" />
-                        </div>
-                    </Grid>
-                ))}
-            </Grid>
-            {isMobileView && (
-                <div className='flex justify-center'>
-                    <IconButton onClick={prevSlide} aria-label="Previous">
-                        <NavigateBefore />
+            <Box style={{ margin: 'auto', padding: '16px', textAlign: 'center' }}>
+                <Grid container spacing={2} justifyContent="space-between">
+                    {testimonials
+                        .slice(currentIndex, currentIndex + testimonialsPerPage)
+                        .map((testimonial) => (
+                            <Grid item xs={12} sm={6} md={2} key={testimonial.id}>
+                                <Box style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', marginBottom: '16px', padding: '16px', borderRadius: '8px', alignContent: 'normal', justifyContent: 'center' }}>
+                                    <div>
+                                        <Avatar src={testimonial.avatarUrl} style={{ width: '100px', height: 'auto', margin: 'auto' }} />
+                                    </div>
+                                </Box>
+                            </Grid>
+                        ))}
+                </Grid>
+                <Box style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '16px' }}>
+                    <IconButton onClick={prevTestimonial} disabled={currentIndex === 0}>
+                        <NavigateBeforeIcon />
                     </IconButton>
-                    <IconButton onClick={nextSlide} aria-label="Next">
-                        <NavigateNext />
+                    <IconButton onClick={nextTestimonial} disabled={currentIndex + testimonialsPerPage >= testimonials.length}>
+                        <NavigateNextIcon />
                     </IconButton>
-                </div>
-            )}
+                </Box>
+            </Box>
         </div>
     );
 };
 
 export default Client;
-
