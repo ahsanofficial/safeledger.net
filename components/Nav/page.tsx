@@ -1,5 +1,5 @@
 "use client"
-import { Fragment, useState } from 'react'
+import { Fragment, useEffect, useState } from 'react'
 import Link from 'next/link';
 import { Dialog, Disclosure, Listbox, Transition } from '@headlessui/react'
 import { Bars3Icon, CheckIcon, ChevronDownIcon, ChevronUpDownIcon, XMarkIcon } from '@heroicons/react/24/outline'
@@ -87,6 +87,15 @@ export default function Header() {
   const handleLinkClick = () => {
     setMobileMenuOpen(false);
   };
+  const [currentUrl, setCurrentUrl] = useState('');
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setCurrentUrl(window.location.pathname);
+    }
+  }, []);
+
+  const shouldHideLinks = currentUrl === '/landing' || currentUrl === '/landing2';
 
   return (
     <header className={style.bgColor}>
@@ -130,8 +139,8 @@ export default function Header() {
                 onMouseEnter={handleDropdownMouseEnter}
                 onMouseLeave={handleDropdownMouseLeave}
               >
-                <div className={`${style.drop} overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5`} >
-                  <div className=" relative grid gap-6 bg-white p-5 lg:grid-cols-2" >
+                <div className={`${style.drop} overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5`}>
+                  <div className="relative grid gap-6 bg-white p-5 lg:grid-cols-2">
                     {services.map((service) => (
                       <Link
                         key={service.href}
@@ -149,14 +158,18 @@ export default function Header() {
               </div>
             )}
           </div>
-          <Link href="/aboutus" className="text-sm font-semibold leading-6 text-gray-900">
-            ABOUT US
-          </Link>
-          <Link href="/contactus" className="text-sm font-semibold leading-6 text-gray-900">
-            CONTACT US
-          </Link>
+          {!shouldHideLinks && (
+            <>
+              <Link href="/aboutus" className="text-sm font-semibold leading-6 text-gray-900">
+                ABOUT US
+              </Link>
+              <Link href="/contactus" className="text-sm font-semibold leading-6 text-gray-900">
+                CONTACT US
+              </Link>
+            </>
+          )}
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center	">
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center">
           <ForumIcon className={`${style.fz35} text-blue-400`} />
           <Link href="#" className="ml-2 text-sm font-semibold leading-6 text-gray-900 text-blue-400 pr-2">
             Get Consultation  <br /><span>+44 20 3318 1326</span>
@@ -173,7 +186,6 @@ export default function Header() {
                       <ChevronUpDownIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
                     </span>
                   </Listbox.Button>
-
                   <Transition
                     show={open}
                     as={Fragment}
@@ -197,13 +209,10 @@ export default function Header() {
                             <>
                               <div className="flex items-center">
                                 <img src={person.avatar} alt="" className="h-5 w-5 flex-shrink-0 rounded-full" />
-                                <span
-                                  className={classNames(selected ? 'font-semibold' : 'font-normal', 'ml-3 block truncate')}
-                                >
+                                <span className={classNames(selected ? 'font-semibold' : 'font-normal', 'ml-3 block truncate')}>
                                   {person.name}
                                 </span>
                               </div>
-
                               {selected ? (
                                 <span
                                   className={classNames(
