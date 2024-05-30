@@ -16,7 +16,7 @@
 }
 
 .formContainer {
-  padding: 20px;
+  padding: 40px;
 }
 
 .image {
@@ -87,13 +87,13 @@
     padding: 5px;
   }
   .margin {
-    margin: 0px 20px 20px 3px !important;
+    margin: 0px -16px 20px 3px !important;
     position: absolute;
     top: 95%;
   }
 
   .textContainer {
-    /* padding: 5px; */
+    padding: 0px;
   }
 
   .border {
