@@ -1,6 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react';
-import { Box, Typography, Avatar, Grid } from '@mui/material';
+import { Box, Typography, Avatar } from '@mui/material';
 import image1 from '../../../public/landing/client/oyo.webp';
 import image2 from '../../../public/landing/client/myoperator.webp';
 import image3 from '../../../public/landing/client/hsbc.webp';
@@ -48,15 +48,11 @@ const Client: React.FC = () => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            if (currentIndex + 1 < testimonials.length) {
-                setCurrentIndex(prevIndex => prevIndex + 1);
-            } else {
-                setCurrentIndex(0);
-            }
+            setCurrentIndex(prevIndex => (prevIndex + 1) % testimonials.length);
         }, 1000);
 
         return () => clearInterval(interval);
-    }, [currentIndex]);
+    }, []);
 
     useEffect(() => {
         const handleResize = () => {
@@ -67,24 +63,23 @@ const Client: React.FC = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    const visibleTestimonials = testimonials.slice(currentIndex, currentIndex + testimonialsPerPage);
-    const additionalTestimonials = testimonials.slice(0, Math.max(testimonialsPerPage - visibleTestimonials.length, 0));
+    const visibleTestimonials = isMobile
+        ? testimonials.slice(currentIndex, currentIndex + 1)
+        : testimonials.slice(currentIndex, currentIndex + testimonialsPerPage);
+
+    const wrappedTestimonials = [...testimonials.slice(currentIndex), ...testimonials.slice(0, currentIndex)];
 
     return (
         <div className={`pt-10 ${styles.bg}`}>
             <Typography className='text-3xl text-center mb-6'>OUR CLIENTS</Typography>
-            <Box style={{ margin: 'auto', padding: '16px', textAlign: 'center' }}>
-                <Grid container spacing={2} justifyContent="space-between">
-                    {[...visibleTestimonials, ...additionalTestimonials].map((testimonial, index) => (
-                        <Grid item xs={12} sm={6} md={2} key={testimonial.id}>
-                            <Box style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', marginBottom: '16px', padding: '16px', borderRadius: '8px', alignContent: 'normal', justifyContent: 'center' }}>
-                                <div>
-                                    <Avatar src={testimonial.avatarUrl} style={{ width: '100px', height: 'auto', margin: 'auto' }} />
-                                </div>
-                            </Box>
-                        </Grid>
-                    ))}
-                </Grid>
+            <Box style={{ margin: 'auto', padding: '16px', textAlign: 'center', display: 'flex', overflow: 'hidden' }}>
+                {wrappedTestimonials.map((testimonial, index) => (
+                    <div key={testimonial.id} style={{ flex: '0 0 auto', transition: 'transform 0.5s', transform: `translateX(${index * 110}%)` }}>
+                        <Box style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', marginBottom: '16px', padding: '16px', borderRadius: '8px', alignContent: 'normal', justifyContent: 'center' }}>
+                            <Avatar src={testimonial.avatarUrl} style={{ width: '100px', height: 'auto', margin: 'auto' }} />
+                        </Box>
+                    </div>
+                ))}
             </Box>
         </div>
     );
