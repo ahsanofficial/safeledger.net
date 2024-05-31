@@ -184,14 +184,11 @@ export default function Header() {
             {({ open }) => (
               <>
                 <div className="relative">
-                  <Listbox.Button className="relative w-full cursor-default rounded-md bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 sm:text-sm sm:leading-6">
+                  <div className="relative w-full cursor-default rounded-md bg-white py-1.5 px-4 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 sm:text-sm sm:leading-6">
                     <span className="flex items-center">
                       <img src={selected?.avatar} alt="" className="h-5 w-5 flex-shrink-0 rounded-full" />
                     </span>
-                    <span className="pointer-events-none absolute inset-y-0 right-0 ml-3 flex items-center pr-2">
-                      <ChevronUpDownIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
-                    </span>
-                  </Listbox.Button>
+                  </div>
                   <Transition
                     show={open}
                     as={Fragment}
@@ -332,14 +329,11 @@ export default function Header() {
                     {({ open }) => (
                       <>
                         <div className="relative">
-                          <Listbox.Button className="relative w-full cursor-default rounded-md bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 sm:text-sm sm:leading-6">
+                          <div className=" cursor-default rounded-md bg-white py-1.5 px-4">
                             <span className="flex items-center">
                               <img src={selected?.avatar} alt="" className="h-5 w-5 flex-shrink-0 rounded-full" />
                             </span>
-                            <span className="pointer-events-none absolute inset-y-0 right-0 ml-3 flex items-center pr-2">
-                              <ChevronUpDownIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
-                            </span>
-                          </Listbox.Button>
+                          </div>
                           <Transition
                             show={open}
                             as={Fragment}
