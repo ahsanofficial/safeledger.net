@@ -8,6 +8,7 @@ import logo from '@/public/logo2.png';
 import ForumIcon from '@mui/icons-material/Forum';
 import { Web, MobileFriendly, DesignServices, Create, Cloud, Engineering, DataUsage, Security, Storefront, BuildCircle } from '@mui/icons-material';
 import { Menu } from '@headlessui/react';
+import uk from "../../public/flag.png"
 
 const services = [
   { name: 'London Registered Office', href: '/services/1', icon: <Web /> },
@@ -30,12 +31,7 @@ const people = [
   {
     id: 1,
     name: 'Wade Cooper',
-    avatar: 'https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png',
-  },
-  {
-    id: 2,
-    name: 'Arlene Mccoy',
-    avatar: 'https://cdn.britannica.com/33/4833-004-828A9A84/Flag-United-States-of-America.jpg',
+    avatar: uk.src,
   },
 ]
 
